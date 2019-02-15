@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>Pizza Mane - Menu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -16,10 +16,44 @@
 
   </head>
   <body>
-    <div class="container-fluid">
+
+    <!--========Navbar Re-used for every page=========-->
+    <nav class="navbar fixed-top navbar-expand-lg mb-3 py-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="resources/images/moosepizza-2.png" width="8%" class="logo"> Tasty and fast!
+            </a>
+            <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurants.html">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--========Menu container=========-->
+    <div class="container-fluid bg-grey">
         <div class="row">
-            <!--===============Pages to fade through=============-->
-                <div class="col-md-12 col-lg-2 rounded mb-5">
+            <div class="col-md-12 col-lg-4 selection-menu">
+                <!--===============The list menu=============-->
+                <div class="col-12 rounded mb-5 menu-list">
                     <div class="list-group" id="list-tab" role="tablist">
                         <a class="list-group-item list-group-item-action active bg-dgrey text-md-center text-lg-left" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">How it works</a>
                         <a class="list-group-item list-group-item-action bg-dgrey text-md-center text-lg-left" id="list-pizza-list" data-toggle="list" href="#list-pizza" role="tab" aria-controls="pizza">Pizza's</a>
@@ -28,16 +62,68 @@
                     </div>
                 </div>
 
-                <!--===============Pages to fade through=============-->
-                <div class="col-md-12 col-lg-10">
+
+                <!--===============Shopping-cart=============-->
+                <div class="card menu-card">
+                    <div class="card-body">
+                        <h6 class="h6 text-center bg-warning py-2 rounded">Add information</h6>
+                        <form>
+                            <div class="form-row">
+                                <div class="col-9">
+                                    <input type="text" class="form-control" placeholder="Street">
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" class="form-control" placeholder="nr">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer py-0">
+                        <div class="row">                        
+                            <div class="col-3 border-left-0 d-flex justify-content-center align-items-center">
+                                <p class="shopping-cart  mb-0 mx-1">0</p>
+                                <p class="shopping-cart mb-0 mr-1"><i class="ion-ios-cart icon-small  mb-0"></i></p>
+                            </div>
+                            <div class="col-5 border d-flex justify-content-center align-items-center">
+                                <p class="mb-0"><strong>TOTAL: 0</strong></p></th>
+                            </div>
+                            <div class="col-4 border-right-0 d-flex justify-content-center ">
+                                <div class="btn btn-check p-1">checkout</div>
+                            </div>
+                        </div> 
+                     </div>
+                </div>
+            </div>
+
+
+            <!--========Empty element that keeps the content away=========-->
+            <div class="col-md-12 col-lg-4 empty-element">
+            </div>
+
+            <!--===============Pages to fade through=============-->
+            <div class="col-md-12 col-lg-8 mt-5">
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">List</div>
+                    <!--========Intro of menu=========-->
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Simpel and fast!</h1>
+                            <p class="lead">If you have subscription, don't worry! Your pizza wont be issued!</p>
+                            <hr class="my-4">
+                            <p>Sit back and relax, while our services work fast and clean. When your pizza arrives it will be served just like it came fresh out of the oven!</p>
+                        </div>
+                        <div class="jumbotron">
+                                
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, saepe at hic quia voluptatum error sed dolorum soluta esse amet assumenda sit. Ab, necessitatibus nesciunt? Veritatis hic odit consectetur rem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat ad facilis deserunt soluta rerum totam officiis, veniam ab adipisci quam provident repellendus eos similique? Dolorem modi veniam iste magnam numquam.</p>
+                                <hr class="my-4">
+                        </div>
+                    </div>
+                    <!--========Pizza Menu=========-->
                     <div class="tab-pane fade" id="list-pizza" role="tabpanel" aria-labelledby="list-pizza-list">
                         <div class="row  d-flex justify-content-center">
 
                         <div class="col-10 col-md-6 col-lg-4 mb-5">
-                            <div class="card" style="width: 100%;">
-                                <img class="card-img-top" src="resources/images/pizza-image.jpg" alt="Pizza!">
+                            <div class="card menu-card shadow">
+                                <img class="card-img-top menu-card" src="resources/images/pizza-image.jpg" alt="Pizza!">
                                 <div class="card-body">
                                     <h5 class="card-title d-flex justify-content-between">Pizza la mama <span class="badge bg-orange">New</span></h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -46,8 +132,8 @@
                             </div>
                         </div>
                         <div class="col-10 col-md-6 col-lg-4 mb-5">
-                            <div class="card" style="width: 100%;">
-                                <img class="card-img-top" src="resources/images/pizza-image.jpg" alt="Pizza!">
+                            <div class="card menu-card shadow">
+                                <img class="card-img-top menu-card" src="resources/images/pizza-image.jpg" alt="Pizza!">
                                 <div class="card-body">
                                     <h5 class="card-title">Coders little secret</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -56,8 +142,8 @@
                             </div>
                         </div>
                         <div class="col-10 col-md-6 col-lg-4 mb-5">
-                            <div class="card" style="width: 100%;">
-                                <img class="card-img-top" src="resources/images/pizza-image.jpg" alt="Pizza!">
+                            <div class="card menu-card shadow">
+                                <img class="card-img-top menu-card" src="resources/images/pizza-image.jpg" alt="Pizza!">
                                 <div class="card-body">
                                     <h5 class="card-title d-flex justify-content-between">Lesley's help<span class="badge bg-yellow">Best</span></h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
@@ -66,8 +152,8 @@
                             </div>
                         </div>
                         <div class="col-10 col-md-6 col-lg-4 mb-5">
-                            <div class="card" style="width: 100%;">
-                                <img class="card-img-top" src="resources/images/pizza-image.jpg" alt="Pizza!">
+                            <div class="card menu-card shadow">
+                                <img class="card-img-top menu-card" src="resources/images/pizza-image.jpg" alt="Pizza!">
                                 <div class="card-body">
                                     <h5 class="card-title">Pizza Calzone</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -76,8 +162,8 @@
                             </div>
                         </div>
                         <div class="col-10 col-md-6 col-lg-4 mb-5">
-                            <div class="card" style="width: 100%;">
-                                <img class="card-img-top" src="resources/images/pizza-image.jpg" alt="Pizza!">
+                            <div class="card menu-card shadow">
+                                <img class="card-img-top menu-card" src="resources/images/pizza-image.jpg" alt="Pizza!">
                                 <div class="card-body">
                                     <h5 class="card-title">Pizza Hawaii</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -86,8 +172,8 @@
                             </div>
                         </div>
                         <div class="col-10 col-md-6 col-lg-4 mb-5">
-                            <div class="card" style="width: 100%;">
-                                <img class="card-img-top" src="resources/images/pizza-image.jpg" alt="Pizza!">
+                            <div class="card menu-card shadow">
+                                <img class="card-img-top menu-card" src="resources/images/pizza-image.jpg" alt="Pizza!">
                                 <div class="card-body">
                                     <h5 class="card-title">Pizza dr oekter</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -96,8 +182,8 @@
                             </div>
                         </div>
                         <div class="col-10 col-md-6 col-lg-4 mb-5">
-                                <div class="card" style="width: 100%;">
-                                    <img class="card-img-top" src="resources/images/pizza-image.jpg" alt="Pizza!">
+                                <div class="card menu-card shadow">
+                                    <img class="card-img-top menu-card" src="resources/images/pizza-image.jpg" alt="Pizza!">
                                     <div class="card-body">
                                         <h5 class="card-title">Pizza maki self</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -106,8 +192,8 @@
                                 </div>
                             </div>
                             <div class="col-10 col-md-6 col-lg-4 mb-5">
-                                <div class="card" style="width: 100%;">
-                                    <img class="card-img-top" src="resources/images/pizza-image.jpg" alt="Pizza!">
+                                <div class="card menu-card shadow">
+                                    <img class="card-img-top menu-card" src="resources/images/pizza-image.jpg" alt="Pizza!">
                                     <div class="card-body">
                                         <h5 class="card-title">Pizza tisallaet</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -116,8 +202,8 @@
                                 </div>
                             </div>
                             <div class="col-10 col-md-6 col-lg-4 mb-5">
-                                <div class="card" style="width: 100%;">
-                                    <img class="card-img-top" src="resources/images/pizza-image.jpg" alt="Pizza!">
+                                <div class="card menu-card shadow">
+                                    <img class="card-img-top menu-card" src="resources/images/pizza-image.jpg" alt="Pizza!">
                                     <div class="card-body">
                                         <h5 class="card-title">Pizza Salami</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -126,8 +212,8 @@
                                 </div>
                             </div>
                             <div class="col-10 col-md-6 col-lg-4 mb-5">
-                                <div class="card" style="width: 100%;">
-                                    <img class="card-img-top" src="resources/images/pizza-image.jpg" alt="Pizza!">
+                                <div class="card menu-card shadow">
+                                    <img class="card-img-top menu-card" src="resources/images/pizza-image.jpg" alt="Pizza!">
                                     <div class="card-body">
                                         <h5 class="card-title">Pizza mia de mama</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -136,18 +222,18 @@
                                 </div>
                             </div>
                             <div class="col-10 col-md-6 col-lg-4 mb-5">
-                                <div class="card" style="width: 100%;">
-                                    <img class="card-img-top" src="resources/images/pizza-image.jpg" alt="Pizza!">
+                                <div class="card menu-card shadow">
+                                    <img class="card-img-top menu-card" src="resources/images/pizza-image.jpg" alt="Pizza!">
                                     <div class="card-body">
-                                        <h5 class="card-title">Pizza fruiti</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h5 class="card-title">Pizza de la mama fruiti.</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's the most basic.</p>
                                         <a href="#" class="btn btn-custom">Add to cart +</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-10 col-md-6 col-lg-4 mb-5">
-                                <div class="card" style="width: 100%;">
-                                    <img class="card-img-top" src="resources/images/pizza-image.jpg" alt="Pizza!">
+                                <div class="card menu-card shadow">
+                                    <img class="card-img-top menu-card" src="resources/images/pizza-image.jpg" alt="Pizza!">
                                     <div class="card-body">
                                         <h5 class="card-title">Pizza Bolognaise.</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's the most basic.</p>
@@ -158,59 +244,51 @@
                     </div>
 
                     </div>
+
+                    <!--========Pasta Menu=========-->
                     <div class="tab-pane fade" id="list-pasta" role="tabpanel" aria-labelledby="list-pasta-list">
-                            <div class="row  d-flex justify-content-center">
-                                
-                                <div class="col-10 col-md-6 col-lg-4 mb-5">
-                                    <div class="card" style="width: 100%;">
-                                        <img class="card-img-top" src="resources/images/Pasta-1.jpg" alt="Pasta!!">
-                                        <div class="card-body">
-                                            <h5 class="card-title d-flex justify-content-between">Pizza la mama <span class="badge bg-orange">New</span></h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="#" class="btn btn-custom">Add to cart +</a>
-                                        </div>
+                        <div class="row  d-flex justify-content-center">
+                            
+                            <div class="col-10 col-md-6 col-lg-4 mb-5">
+                                <div class="card" style="width: 100%;">
+                                    <img class="card-img-top" src="resources/images/Pasta-1.jpg" alt="Pasta!!">
+                                    <div class="card-body">
+                                        <h5 class="card-title d-flex justify-content-between">Pizza la mama <span class="badge bg-orange">New</span></h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-custom">Add to cart +</a>
                                     </div>
                                 </div>
-                                <div class="col-10 col-md-6 col-lg-4 mb-5">
-                                    <div class="card" style="width: 100%;">
-                                        <img class="card-img-top" src="resources/images/Pasta-1.jpg" alt="Pasta!!">
-                                        <div class="card-body">
-                                            <h5 class="card-title d-flex justify-content-between">Pizza la mama <span class="badge bg-orange">New</span></h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="#" class="btn btn-custom">Add to cart +</a>
-                                        </div>
+                            </div>
+                            <div class="col-10 col-md-6 col-lg-4 mb-5">
+                                <div class="card" style="width: 100%;">
+                                    <img class="card-img-top" src="resources/images/Pasta-1.jpg" alt="Pasta!!">
+                                    <div class="card-body">
+                                        <h5 class="card-title d-flex justify-content-between">Pizza la mama <span class="badge bg-orange">New</span></h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-custom">Add to cart +</a>
                                     </div>
                                 </div>
-                                <div class="col-10 col-md-6 col-lg-4 mb-5">
-                                    <div class="card" style="width: 100%;">
-                                        <img class="card-img-top" src="resources/images/Pasta-1.jpg" alt="Pasta!!">
-                                        <div class="card-body">
-                                            <h5 class="card-title d-flex justify-content-between">Pizza la mama </h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="#" class="btn btn-custom">Add to cart +</a>
-                                        </div>
+                            </div>
+                            <div class="col-10 col-md-6 col-lg-4 mb-5">
+                                <div class="card" style="width: 100%;">
+                                    <img class="card-img-top" src="resources/images/Pasta-1.jpg" alt="Pasta!!">
+                                    <div class="card-body">
+                                        <h5 class="card-title d-flex justify-content-between">Pizza la mama </h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-custom">Add to cart +</a>
                                     </div>
                                 </div>
-                                <div class="col-10 col-md-6 col-lg-4 mb-5">
-                                    <div class="card" style="width: 100%;">
-                                        <img class="card-img-top" src="resources/images/Pasta-1.jpg" alt="Pasta!!">
-                                        <div class="card-body">
-                                            <h5 class="card-title d-flex justify-content-between">Pizza la mama </h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="#" class="btn btn-custom">Add to cart +</a>
-                                        </div>
+                            </div>
+                            <div class="col-10 col-md-6 col-lg-4 mb-5">
+                                <div class="card" style="width: 100%;">
+                                    <img class="card-img-top" src="resources/images/Pasta-1.jpg" alt="Pasta!!">
+                                    <div class="card-body">
+                                        <h5 class="card-title d-flex justify-content-between">Pizza la mama </h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-custom">Add to cart +</a>
                                     </div>
                                 </div>
-                                    <div class="col-10 col-md-6 col-lg-4 mb-5">
-                                        <div class="card" style="width: 100%;">
-                                            <img class="card-img-top" src="resources/images/Pasta-1.jpg" alt="Pasta!!">
-                                            <div class="card-body">
-                                                <h5 class="card-title d-flex justify-content-between">Pizza la mama </h5>
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                <a href="#" class="btn btn-custom">Add to cart +</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                            </div>
                                 <div class="col-10 col-md-6 col-lg-4 mb-5">
                                     <div class="card" style="width: 100%;">
                                         <img class="card-img-top" src="resources/images/Pasta-1.jpg" alt="Pasta!!">
@@ -221,42 +299,54 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-10 col-md-6 col-lg-4 mb-5">
-                                    <div class="card" style="width: 100%;">
-                                        <img class="card-img-top" src="resources/images/Pasta-1.jpg" alt="Pasta!!">
-                                        <div class="card-body">
-                                            <h5 class="card-title d-flex justify-content-between">Pizza la mama </h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="#" class="btn btn-custom">Add to cart +</a>
-                                        </div>
+                            <div class="col-10 col-md-6 col-lg-4 mb-5">
+                                <div class="card" style="width: 100%;">
+                                    <img class="card-img-top" src="resources/images/Pasta-1.jpg" alt="Pasta!!">
+                                    <div class="card-body">
+                                        <h5 class="card-title d-flex justify-content-between">Pizza la mama </h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-custom">Add to cart +</a>
                                     </div>
                                 </div>
-                                <div class="col-10 col-md-6 col-lg-4 mb-5">
-                                    <div class="card" style="width: 100%;">
-                                        <img class="card-img-top" src="resources/images/Pasta-1.jpg" alt="Pasta!!">
-                                        <div class="card-body">
-                                            <h5 class="card-title d-flex justify-content-between">Pizza la mama </h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="#" class="btn btn-custom">Add to cart +</a>
-                                        </div>
+                            </div>
+                            <div class="col-10 col-md-6 col-lg-4 mb-5">
+                                <div class="card" style="width: 100%;">
+                                    <img class="card-img-top" src="resources/images/Pasta-1.jpg" alt="Pasta!!">
+                                    <div class="card-body">
+                                        <h5 class="card-title d-flex justify-content-between">Pizza la mama </h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-custom">Add to cart +</a>
                                     </div>
                                 </div>
-                                <div class="col-10 col-md-6 col-lg-4 mb-5">
-                                    <div class="card" style="width: 100%;">
-                                        <img class="card-img-top" src="resources/images/Pasta-1.jpg" alt="Pasta!!">
-                                        <div class="card-body">
-                                            <h5 class="card-title d-flex justify-content-between">Pizza la mama <</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="#" class="btn btn-custom">Add to cart +</a>
-                                        </div>
+                            </div>
+                            <div class="col-10 col-md-6 col-lg-4 mb-5">
+                                <div class="card" style="width: 100%;">
+                                    <img class="card-img-top" src="resources/images/Pasta-1.jpg" alt="Pasta!!">
+                                    <div class="card-body">
+                                        <h5 class="card-title d-flex justify-content-between">Pizza la mama </h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-custom">Add to cart +</a>
                                     </div>
                                 </div>
-                            </div>                
-                        </div>
+                            </div>
+                            <div class="col-10 col-md-6 col-lg-4 mb-5">
+                                <div class="card" style="width: 100%;">
+                                    <img class="card-img-top" src="resources/images/Pasta-1.jpg" alt="Pasta!!">
+                                    <div class="card-body">
+                                        <h5 class="card-title d-flex justify-content-between">Pizza la mama <</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-custom">Add to cart +</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                
+                    </div>
+
+                    <!--========Desserts=========-->
                     <div class="tab-pane fade" id="list-desserts" role="tabpanel" aria-labelledby="list-desserts-list">
                         <div class="row  d-flex justify-content-center">
                             <div class="col-10 col-md-6 col-lg-5 mb-5">
-                                <div class="card" style="width: 100%;">
+                                <div class="card menu-card">
                                     <img class="card-img-top" src="resources/images/dessert-1.jpeg" alt="Deserts!!!">
                                     <div class="card-body">
                                         <h3 class="card-title d-flex justify-content-center text-center">Coming soon!</h3>
@@ -271,11 +361,10 @@
         </div>
     </div>
 
-            
-    
-    
-
-
+    <!--========Footer=========-->
+    <div class="footer bg-dark mt-5 p-1 text-center">
+        <p>Copyright © 2019 - 2019 Nick Banken</p>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -283,3 +372,4 @@
     
   </body>
 </html>
+

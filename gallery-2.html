@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>Pizza - Gallery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -17,101 +17,97 @@
 
   </head>
   <body>
-      <nav class="navbar fixed-top navbar-expand-lg  mb-3 py-3">
-          <div class="container">
-              <a class="navbar-brand" href="index.html">
-                  <img src="resources/images/moosepizza-2.png" width="8%" class="logo"> Tasty and fast!
-              </a>
-              <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navbarNav">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ml-auto">
-                      <li class="nav-item">
-                          <a class="nav-link" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="restaurants.html">Restaurants</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Menu</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="gallery.html">Gallery</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Contact</a>
-                      </li>
-                  </ul>
-              </div>
+
+    <!--========Navbar Re-used for every page=========-->
+    <nav class="navbar fixed-top navbar-expand-lg  mb-3 py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="resources/images/moosepizza-2.png" width="8%" class="logo"> Tasty and fast!
+        </a>
+        <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="restaurants.html">Restaurants</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!--========Gallery=========-->
+    <section class="section-gallery">
+      <div class="container">
+        <div class="row justify-content-center pt-5">
+
+          <div class="col-md-3 m-3 image">
+            <a href="resources/images/basil-bread-cheese-1260968.jpg" class="thumbnail" data-toggle="lightbox">
+              <img src="resources/images/basil-bread-cheese-1260968.jpg" alt="..." class="img-thumbnail">
+            </a>
           </div>
-      </nav>
 
+          <div class="col-md-3 m-3 d-flex align-self-center image">
+            <a href="resources/images/bottle-coca-cola-cooking-845808.jpg" class="thumbnail" data-toggle="lightbox">
+              <img src="resources/images/bottle-coca-cola-cooking-845808.jpg" alt="..." class="img-thumbnail">
+            </a>
+          </div>
 
-      <section class="section-gallery">
-        <div class="container">
-          <div class="row justify-content-center pt-5">
+          <div class="col-md-6 m-3">
+            <a href="resources/images/blur-burn-dark-1082343.jpg" class="thumbnail" data-toggle="lightbox">
+              <img src="resources/images/blur-burn-dark-1082343.jpg" alt="..." class="img-thumbnail">
+            </a>
+          </div>
 
-            <div class="col-md-3 m-3 image">
-              <a href="resources/images/basil-bread-cheese-1260968.jpg" class="thumbnail" data-toggle="lightbox">
-                <img src="resources/images/basil-bread-cheese-1260968.jpg" alt="..." class="img-thumbnail">
-              </a>
-            </div>
-
-            <div class="col-md-3 m-3 d-flex align-self-center image">
-              <a href="resources/images/bottle-coca-cola-cooking-845808.jpg" class="thumbnail" data-toggle="lightbox">
-                <img src="resources/images/bottle-coca-cola-cooking-845808.jpg" alt="..." class="img-thumbnail">
-              </a>
-            </div>
-
-            <div class="col-md-6 m-3">
-              <a href="resources/images/blur-burn-dark-1082343.jpg" class="thumbnail" data-toggle="lightbox">
-                <img src="resources/images/blur-burn-dark-1082343.jpg" alt="..." class="img-thumbnail">
-              </a>
-            </div>
-
-            <div class="col-md-6 m-3">
-              <a href="resources/images/pexels-photo-1566837.jpeg" class="thumbnail" data-toggle="lightbox">
-                <img src="resources/images/pexels-photo-1566837.jpeg" alt="..." class="img-thumbnail">
-              </a>
-            </div>
-
-            
-
+          <div class="col-md-6 m-3">
+            <a href="resources/images/pexels-photo-1566837.jpeg" class="thumbnail" data-toggle="lightbox">
+              <img src="resources/images/pexels-photo-1566837.jpeg" alt="..." class="img-thumbnail">
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
+    <!--========Pagination=========-->
+    <section class="pagination d-flex justify-content-center">
+      <nav aria-label="next" class>
+        <ul class="pagination pagination-lg">
+          
+          <li class="page-item"><a class="page-link" href="gallery.html">1</a></li>
+          <li class="page-item active" aria-current="page">
+            <span class="page-link">
+              2
+              <span class="sr-only">(current)</span>
+            </span>
+          </li>
+          <li class="page-item"><a class="page-link" href="gallery-3.html">3</a></li>
+        </ul>
+      </nav>
+    </section>
 
-      <section class="pagination d-flex justify-content-center">
-          <nav aria-label="next" class>
-              <ul class="pagination pagination-lg">
-                
-                <li class="page-item"><a class="page-link" href="gallery.html">1</a></li>
-                <li class="page-item active" aria-current="page">
-                  <span class="page-link">
-                    2
-                    <span class="sr-only">(current)</span>
-                  </span>
-                </li>
-                <li class="page-item"><a class="page-link" href="gallery-3.html">3</a></li>
-              </ul>
-            </nav>
-      </section>
+    <!--========Footer=========-->
+    <div class="footer bg-dark p-1 text-center">
+      <p>Copyright © 2019 - 2019 Nick Banken</p>
+    </div>
 
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
-            <script src="resources/js/script.js"></script>
-            
-          </body>
-        </html>
-
-
-        <!--<a href="resources/images/fast-food-food-lunch-16495.jpg" class="thumbnail" data-toggle="lightbox">
-          <div class="thumbnail">
-            <img src="resources/images/fast-food-food-lunch-16495.jpg" class="img-thumbnail" alt="...">
-          </div>
-        </a>
-        -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script src="resources/js/script.js"></script>
+    
+  </body>
+</html>

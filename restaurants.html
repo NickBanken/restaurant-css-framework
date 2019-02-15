@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"/>
-      <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="resources/css/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/ionicons.min.css" />
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Pizza Mane - Restaurants</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous"/>
+        <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="resources/css/style.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/ionicons.min.css" />
+    </head>
+    <body>
 
-  </head>
-  <body>
+    <!--========Navbar Re-used for every page=========-->
     <nav class="navbar fixed-top navbar-expand-lg  mb-3">
         <div class="container">
             <a class="navbar-brand ml-5" href="index.html">
@@ -33,18 +34,20 @@
                         <a class="nav-link" href="restaurants.html">Restaurants</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Menu</a>
+                        <a class="nav-link" href="menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!--========Opening=========-->
     <div class="container-fluid bg-grey">
         <section class="section-restaurant">
             <div class="row d-flex justify-content-center">
@@ -142,28 +145,35 @@
                 </div>
             </div>
         </section>
-        </div>
-        <div class="container-fluid bg-white">
-            <section class="section-map row d-flex justify-content-center">
-                <div class="col-md-12 col-lg-6 mt-5">
-                    <div class="card" style="width: 100%;">
-                        <div class="card-body bg-dgrey rounded">
-                            <h4 class="display-4 d-flex justify-content-center mb-2 bg-orange rounded">Brussels</h4>
-                            <div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=1%20Rue%20de%20Beughem+(Deployment%20Brussel)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Create a route on google maps</a></iframe>
-                            </div><br />
+    </div>
+    <!--========Maps=========-->
+    <div class="container-fluid bg-white">
+        <section class="section-map row d-flex justify-content-center">
+            <div class="col-md-12 col-lg-6 mt-5">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body bg-dgrey rounded">
+                        <h4 class="display-4 d-flex justify-content-center mb-2 bg-orange rounded">Brussels</h4>
+                        <div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=1%20Rue%20de%20Beughem+(Deployment%20Brussel)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Create a route on google maps</a></iframe>
                         </div>
+                        <br/>
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-6 mt-5">
-                    <div class="card" style="width: 100%;">
-                        <div class="card-body bg-dgrey rounded">
-                            <h4 class="display-4 d-flex justify-content-center mb-2 bg-orange rounded">Ghent</h4>
-                            <div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=600&amp;height=600&amp;hl=en&amp;q=gent%20%2034%20Korenmarkt+(Deployment%20Gent)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a></iframe>
-                            </div><br />
+            </div>
+            <div class="col-md-12 col-lg-6 mt-5">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body bg-dgrey rounded">
+                        <h4 class="display-4 d-flex justify-content-center mb-2 bg-orange rounded">Ghent</h4>
+                        <div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=600&amp;height=600&amp;hl=en&amp;q=gent%20%2034%20Korenmarkt+(Deployment%20Gent)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a></iframe>
                         </div>
+                        <br/>
                     </div>
-                </div> 
-            </section>
+                </div>
+            </div> 
+        </section>
+    </div>
+
+        <div class="footer bg-dark p-1 text-center mt-3">
+            <p>Copyright © 2019 - 2019 Nick Banken</p>
         </div>
             
             
