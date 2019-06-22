@@ -5,9 +5,10 @@
   font-weight: normal;
   font-style: normal; }
 /*=============Reset==============*/
-body {
+body,
+html {
   overflow-x: hidden;
-  background-color: #f5f5f5; }
+  font-family: Roboto; }
 
 * {
   margin: 0;
@@ -38,28 +39,14 @@ h2 {
   filter: brightness(0) invert(1);
   /* Other styles here */ }
 
-.orange-t,
-.icons,
-.icon-small {
-  color: #e67e22; }
-
-.icon-small {
-  font-size: 160%; }
-
-.bg-grey {
-  background-color: #f5f5f5; }
-
-.bg-dgrey {
-  background-color: #222222;
-  color: white; }
-
-.bg-orange {
-  background-color: #e67e22;
-  color: white; }
+.text-grey {
+  color: #5f5f5f; }
 
 .btn-primary,
 .btn-primary:hover {
+  border-radius: 10px;
   background: #579aff;
+  padding: 20px 0px;
   border: none;
   font-weight: 600; }
 
@@ -70,7 +57,7 @@ h2 {
 .btn-custom:active {
   background-color: #e67e22;
   color: white;
-  width: 38%;
+  width: 330px;
   padding: 20px 0px;
   margin: auto;
   font-weight: 600; }
@@ -79,23 +66,22 @@ h2 {
   background-color: #222222;
   height: 80px; }
 
-.nav-btn {
-  font-size: 12px;
+.nav-btn,
+.dropdown-item {
+  font-size: 11px;
   font-weight: 600; }
+
+nav img {
+  height: 50px; }
 
 header {
   width: 100%;
   height: 100%; }
   header .header-img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/pizza-01.jpg");
+    background-image: linear-gradient(to bottom, #00000041 0%, #00000046 82%, #ffffff 82%), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/pizza-01.jpg");
     background-size: cover;
     background-position: center;
-    padding-right: 0;
-    height: 50vh;
-    box-shadow: 0px 3px 10px #1d1d1d; }
-
-nav img {
-  height: 50px; }
+    padding-right: 0; }
 
 .card-search {
   margin-top: 20px;
@@ -108,12 +94,12 @@ nav img {
   list-style: none; }
   .selection-home li {
     width: 100%;
-    margin-left: 30px; }
+    margin-left: 5px; }
   .selection-home li:first-child {
     margin: 0; }
 
 .selected-btn {
-  width: 100%;
+  width: 130px;
   height: 100px;
   background: #e67e22;
   border: none; }
@@ -121,7 +107,7 @@ nav img {
     color: white; }
 
 .selection-btn {
-  width: 100%;
+  width: 130px;
   height: 100px;
   background: #e0e0e0;
   border: none; }
@@ -135,7 +121,7 @@ nav img {
 .selection-btn:hover,
 .selection-btn:active,
 .selection-btn:focus {
-  width: 100%;
+  width: 130px;
   height: 100px;
   background: #e67e22; }
   .selection-btn:hover P,
@@ -147,15 +133,62 @@ nav img {
     color: white; }
 
 .section-promo {
-  margin-top: 170px; }
+  margin-top: 100px; }
   .section-promo img {
-    width: 100%;
+    width: 430px;
     display: block;
     box-shadow: 0px 10px 30px rgba(31, 31, 31, 0.39); }
 
+.promo-1,
+.promo-2 {
+  display: flex; }
+
+.promo-1 {
+  justify-content: flex-end; }
+
+.promo-2 {
+  justify-content: flex-start; }
+
 .promo-background {
   height: 480px;
-  background: radial-gradient(ellipse at center, #424242 0%, #1d1d1d 99%);
+  background: radial-gradient(ellipse at center, #575757 0%, #1d1d1d 99%);
   box-shadow: 0px 10px 30px rgba(31, 31, 31, 0.39); }
+
+.restaurant-banner {
+  margin-top: 120px; }
+  .restaurant-banner .sizer {
+    width: 900px; }
+    .restaurant-banner .sizer .banner-container {
+      height: 100%;
+      background-image: linear-gradient(to bottom, rgba(70, 70, 70, 0.52), rgba(117, 86, 19, 0.73)), url(/resources/css/images/restaurants-min.jpg); }
+      .restaurant-banner .sizer .banner-container .btn-custom {
+        background: #7db34a;
+        width: 170px; }
+
+/*=============SECTION NEWSLETTER==============*/
+.section-newletter {
+  margin-top: 450px;
+  background: #333333; }
+  .section-newletter .text-grey p {
+    font-size: 80%; }
+
+.btn-send {
+  background: #e94242;
+  height: 38px;
+  width: 70px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: white; }
+  .btn-send span {
+    font-size: 120%; }
+
+.send-form {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.footer {
+  height: 400px;
+  width: 100%;
+  background: #1f1f1f; }
 
 /*# sourceMappingURL=style.css.map */

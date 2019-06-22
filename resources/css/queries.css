@@ -1,0 +1,116 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+
+    .restaurant-banner .sizer{
+        width: 830px;
+    }
+	.section-promo img {
+		width: 400px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+    .restaurant-banner .sizer{
+        width: 730px;
+    }
+    
+    .section-promo img {
+		width: 350px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+
+    .restaurant-banner .sizer{
+        width: 530px;
+        height: 100%;
+    }
+
+	.promo-1 {
+		justify-content: center;
+	}
+	.promo-2 {
+		justify-content: center;
+	}
+
+	.promo-background {
+		height: 700px;
+	}
+
+	h2 {
+		font-size: 175%;
+	}
+	.restaurant-banner .sizer .banner-container .btn-custom {
+		font-size: 80%;
+		width: 120px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+	h3,
+	h2 {
+		font-size: 120%;
+	}
+
+	p {
+		font-size: 80%;
+	}
+
+	.selection-btn i {
+		font-size: 30px;
+	}
+
+	.text-restaurant {
+		font-size: 120%;
+	}
+
+	.card-body {
+		width: 100%;
+	}
+
+	.selection-home li {
+		width: 1;
+	}
+
+	.section-promo {
+		margin-top: 100px;
+	}
+
+	.btn-custom {
+		width: 120px;
+	}
+
+	.selection-btn,
+	.selected-btn {
+		width: 90px;
+		height: 80px;
+	}
+
+	.section-promo img {
+		width: 300px;
+	}
+
+	.promo-background {
+		height: 600px;
+    }
+    
+    .restaurant-banner{
+        margin-top:40px;
+    }
+
+	.restaurant-banner .sizer .banner-container {
+		height: 100%;
+	}
+
+	.section-newletter {
+		margin-top: 270px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+}
