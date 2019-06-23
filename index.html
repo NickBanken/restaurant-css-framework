@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
   <head>
       
     <meta charset="utf-8" />
+    <title>Pizza Mane</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/eec7cac8d4.js"></script>
     
@@ -38,9 +39,9 @@
                                     <button class="nav-btn btn btn-light dropdown-toggle mr-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"            aria-expanded="false">
                                         EN
                                     </button>
-                                    <div class="dropdown-menu mr-5" aria-labelledby="dropdownMenuButton">
-                                        <!-- <a class="dropdown-item mr-5" href="#" selected>English <span class="flag-icon flag-icon-gb"> </span></a> -->
-                                        <a class="dropdown-item mr-5" href="#">Français <span class="flag-icon flag-icon-fr"> </span></a>
+                                    <div class="dropdown-menu mr-4" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item mr-5" href="#eng" data-reload>English <span class="flag-icon flag-icon-gb"> </span></a>
+                                        <a class="dropdown-item" href="#fr" data-reload>Français <span class="flag-icon flag-icon-fr"> </span></a>
                                     </div>
                                 </div>
                             </div>
@@ -50,7 +51,7 @@
     
                         <div class="row d-flex justify-content-center">
                             <div class="col-12 d-flex justify-content-center text-center">
-                                <h2>Most delicious pizza's<br> Hot delivery within 30mins!</h2>
+                                <h2 id="deliverytime">Most delicious pizza's<br> Hot delivery within 30mins!</h2>
                             </div>
                             <div class="card-search card text-center">
                                     <div class="card-body">
@@ -126,25 +127,118 @@
             </section>
 
             <section class="row section-newletter text-white d-flex justify-content-center">
-                <div class="col-4">
-                    <div class="row d-flex align-items-center text-center my-4">
-                        <div class="col-2">
+                <div class="col-md-8 col-lg-6">
+                    <div class="row d-flex align-items-center justify-content-center text-center my-4">
+                        <div class="col-xs-4 col-sm-3 col-md-2 col-lg-3">
                             <p>Newsletter</p>
                         </div>
-                        <div class="col-4 text-grey">
+                        <div class="col-xs-1 col-sm-3 col-md-3 col-lg-3  text-grey">
                            <p>Get our promotions</p> 
                         </div>
-                        <div class="col-6 d-flex">
-                        <input type="email" class="send-form form-control">
-                        <button class="btn btn-send"><span class="ion-ios-email-outline"></span></button>
+                        <div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 d-flex">
+                            <input type="email" class="send-form form-control">
+                            <button class="btn btn-send"><span class="ion-ios-email-outline"></span></button>
                         </div>
                     </div>
                 </div>
             </section>
             <footer>
                 <div class="row">
-                    <div class="footer">
-
+                    <div class="footer text-white">
+                        <div class="row d-flex justify-content-center mt-5">
+                                <div class="col-sm-12 col-md-10 ">
+                                        <div class="row ">
+                                                <div class=" col-sm-6 col-md-3 d-flex flex-column align-items-center">
+                                                        <div class="titel mb-3">
+                                                                <p>About Pizza Mane</p>
+                                                        </div>
+                                                        <div class="footer-list">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#">Our restaurants</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Jobs</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Franchise</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Contact</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">FAQ</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" col-sm-6 col-md-3 d-flex flex-column align-items-center">
+                                                            <div class="titel mb-3">
+                                                                <p>Order Online</p>
+                                                                </div>
+                                                                <div class="footer-list">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="#">for delivery</a> 
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Order for take out</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Happy sundays</a> 
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">crazy thursdays</a> 
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                    </div>
+                                                    <div class=" col-sm-6 col-md-3 d-flex flex-column align-items-center">
+                                                            <div class="titel mb-3">
+                                                                    <p>Restaurants</p>
+                                                                </div>
+                                                                <div class="footer-list">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="#">Closest Mane?</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Customers card</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Kids</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Student Deals</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                    </div>
+                                                    <div class=" col-sm-6 col-md-3 d-flex flex-column align-items-center">
+                                                            <div class="titel mb-3">
+                                                                    <p>Actions</p>
+                                                                </div>
+                                                                <div class="footer-list">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="#">Happy sundays</a> 
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Crazy thursday</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Pizza buffet</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Mane's menu</a> 
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                    </div>
+            
+                                        </div>
+                                    </div>
+                        </div>
                     </div>
                 </div>
             </footer>          
@@ -260,6 +354,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    
+    <script src="resources/js/script.js"></script>
   </body>
 </html>
