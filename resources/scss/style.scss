@@ -2,15 +2,19 @@
 
 @font-face {
 	font-family: 'blockbecondensed';
-	src: url('/resources/css/fonts/BlockBe/blockbecondensed-webfont.woff2') format('woff2'),
-		url('/resources/css/fonts/BlockBe/blockbecondensed-webfont.woff') format('woff');
+	
+	 /* Opening of file on not localhost  */
+	src: url("fonts/BlockBe/blockbecondensed-webfont.woff2") format("woff2"),
+	url("fonts/BlockBe/blockbecondensed-webfont.woff") format("woff"); 
+  
+	/* Opening on localhost */
+	/* src: url("/resources/css/fonts/BlockBe/blockbecondensed-webfont.woff2") format("woff2"),
+	url("/resources/css/fonts/BlockBe/blockbecondensed-webfont.woff") format("woff"); */
 	font-weight: normal;
-	font-style: normal;
-}
+	font-style: normal; }
 
 $orange: #e67e22;
 $darkgrey: rgb(34, 34, 34);
-
 $shadow: 0px 10px 30px rgba(31, 31, 31, 0.39);
 
 /*=============Reset==============*/
@@ -46,7 +50,7 @@ h2 {
 }
 
 .scooter-icon {
-	background: url('/resources/css/images/scooter.svg');
+	background: url('images/scooter.svg');
 	height: 35px;
 	width: 35px;
 	margin: 5px;
@@ -56,16 +60,16 @@ h2 {
 	/* Other styles here */
 }
 
-.text-grey {
-	color: rgb(95, 95, 95);
-}
+
 
 .btn-primary,
 .btn-primary:hover {
-	border-radius: 10px;
 	background: rgb(87, 154, 255);
+
 	padding: 20px 0px;
+	border-radius: 10px;
 	border: none;
+	
 	font-weight: 600;
 }
 
@@ -86,10 +90,7 @@ h2 {
 
 // /*=============Navbar==============*/
 
-.nav-logo {
-	background-color: rgb(34, 34, 34);
-	height: 80px;
-}
+
 
 .nav-btn,
 .dropdown-item {
@@ -103,7 +104,7 @@ nav {
 	}
 }
 
-// /*=============StartPage==============*/
+// /*=============HEADER==============*/
 
 header {
 	width: 100%;
@@ -286,7 +287,9 @@ header {
 	border-bottom-right-radius: 0;
 }
 
-.footer {;
+// /*=============FOOTER==============*/
+
+.footer {
 	width: 100%;
 	background: #1f1f1f;
 }
